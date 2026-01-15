@@ -3,7 +3,7 @@ volumes:
 
 networks:
   kong-ee-net:      # Custom bridge network for isolated Kong and Postgres communication
-    driver: bridge test
+    driver: bridge
 
 # Common environment variables used by Kong services (bootstrap and CP)
 x-kong-config: &kong-env
